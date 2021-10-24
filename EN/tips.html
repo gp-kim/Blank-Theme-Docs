@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blank Theme - Tips & Tricks</title>
+
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/pages.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@300;0,400;0,700;0,900;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+           <a href="/EN/index.html" class="homepage">
+            <img src="/asset/logo.png" />
+            <span class="title">Blank Theme</span>
+            </a>
+            <div class="lang">
+                    <a href="/index.html">
+                        <img src="/asset/fr_flag.png" alt="english" class="flag">fr
+                    </a>
+                    <a class="translate" href="https://blankthemerpg.forumactif.com//t47-multi-langages-help-translate" target="_blank">translate?</a>
+                
+            </div>
+            
+        </div>
+
+        <div class="navigation" id="header">
+            <a href="/EN/configuration.html">Configuration</a>
+            <a href="/EN/modifications.html">Changes</a>
+            <a href="/EN/tips.html">Tips & tricks</a>
+            <a href="/EN/templates.html">Templates</a>
+            <a href="https://github.com/gp-kim/Blank-Theme" target="_blank" class="code-nav">Codes</a>
+        </div>
+    </header>
+
+
+
+    <div class="head-page">
+        <i class="bi bi-book"></i>
+        <div>
+            <h1>Tips & Tricks</h1>
+            <p>Start on the right foot to make modifying your forum easier.</p>
+        </div>
+    </div>
+
+    <main>
+
+        <aside>
+            <div class="index">
+                <a href="#forums"><i class="bi bi-caret-right-fill"></i>Forumactif</a><br>
+                <a href="#codes"><i class="bi bi-caret-right-fill"></i>Code</a><br>
+                <a href="#design"><i class="bi bi-caret-right-fill"></i>Design</a>
+            </div>
+
+        </aside>
+
+
+        <div class="content">
+
+            <h2 id="forums">Forumotion tips</h2>
+
+            <article class="onpage">
+                <span class="title_article">Variables</span>
+                <p class="content">Within the templates you will find two types of variables: display variables&nbsp;<c>{VARIABLES}</c> , which usually contain a single data point (eg. statistics: 5 posts), as well as loop variables <c>&lt;!--BEGIN--&gt;</c>&nbsp;, which repeat a whole element (eg. a post). Take note: loop variables start with <c>&lt;!--BEGIN...--&gt;</c>&nbsp;and end with&nbsp;<c>&lt;!-- END... --&gt;</c>&nbsp;, and HTML comments are simply contained within&nbsp;<c>&lt;!-- &nbsp;--&gt;</c>  brackets. Most of the time, they're comments I've added to the code. 
+                <br/>If your forum does not display a topic list or a post as it should, it's probably because the loop variable is misplaced. Make sure to place your elements within these brackets if they appear in the code.</p><br />
+                <p class="content">In the Blank Theme, the loop variables are annotated so you know what they do.</p>
+
+                <br />
+                <span class="title_article">Variables list</span>
+
+                <p class="content">If you have a doubt about what a variable does, a Forumactif administrator, Etana, has compiled a list of most <a target="_blank" href="https://github.com/Etana/template/blob/master/variables_avec_description.md" class="underline">variables with a description</a> <em>(in French)</em>. With a <strong>Ctrl+F</strong> search, you should find what you need.</p>
+
+
+                <br />
+                <span class="title_article">Forumactif ID</span>
+                <p class="content">You will sometimes see display variables in an ID, like such: <c>&lt;div id="{VARIABLE}"&gt;</c>. It's what IDentifies an HTML element. They're usually used on Forumactif for posts. Deleting them can cause errors <em>(access the last post, retrieve a post's direct link...)</em>.</p>
+
+            </article>
+            
+            
+            <h2 id="codes">Coding tips</h2>
+            
+            <article class="onpage">
+                <span class="title_article">Structure your forum</span>
+                <p class="content">Newer versions of Forumactif <em>(phpBB3, ModernBB...)</em> don't use the often misused <c>&lt;table&gt;</c> display to build their structures. This display type is obsolete and restrictive. These versions use other attributes, that I also recommend: <a href="https://css-tricks.com/all-about-floats/" target="_blank" class="underline">float</a>, <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="underline" target="_blank">flex</a>, et <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" class="underline">grid</a>. They offer more possibilities and reduce the length of the code. A lot of tutorials are available online to make the best of these attributes.</p>
+
+                <br />
+                <span class="title_article">Inspect Feature</span>
+
+                <p class="content">Use your browser's Inspect Element feature <em>(right click › Inspect)</em>. It will give you all the info you need to understand variables, view Forumactif's basic CSS, or pinpoint bugs or errors.</p>
+
+
+                <br />
+                <span class="title_article">Modified Scripts</span>
+                <p class="content">Pay attention to scripts: they were modified to match <c>.class</c> and ID attributes created for the Blank Theme. If you modify the HTML code, it may corrupt the scripts and prevent them from working properly. Don't forget to adapt them do your changes by following the steps in the original tutorial.</p>
+                
+                <br />
+                <span class="title_article">Code customisation</span>
+                <p class="content"> Unless otherwise indicated (in the CSS), feel free to create or modify <c>.class</c> that work better with your future customisation.</p>
+                
+                <br />
+                <span class="title_article">Target an image</span>
+                <p class="content">To target an image directly (usually set in a variable, like avatars) with CSS, you must express it like such: <c>.conteneur img { }</c></p>
+                
+                <br />
+                <span class="title_article">Escape the float attribute</span>
+                <p class="content">You will certainly see elements positioned with the <c>float</c>attribute. As useful as it may be, it can restrict the placement of the elements that follow and create a cascading effect. To break it, you can use the <c>clear: both</c> attribute on elements that follow it.</p>
+
+            </article>
+            
+            
+            <h2 id="design">Design Model Tips</h2>
+            
+            <article class="onpage">
+               
+               <p class="content">This parts deserves much more detailed information, but in the meantime, here are a few essential points: </p>
+               
+                <span class="title_article">Preparation</span>
+                <p class="content">To create a harmonious, aesthetic and accessible design, take some time to draw up a design model for your forum's main pages. It's extra work, but it's not wasted effort: all of the time you spend doing a model is time saved when comes the time to code. <br><em>Check out the <a href="https://www.figma.com/file/H24YgcaHRiRJHgEizN7wDD/Blank-theme?node-id=1%3A3" class="underline" target="_blank">Blank Theme design model</a> as an example.</em></p>
+
+                <br />
+                <span class="title_article">Patterns</span>
+                <p class="content">Some elements or parts of your forum repeat themselves in different places. Spot them! These patterns can be reproduced by a quick copy-and-paste instead of coding the same thing twice or more. <br/><em>Exemples : navigation's chain (category > forum > sub-forum), paginations , buttons...</em></p>
+
+
+                <br />
+                <span class="title_article">Responsive</span>
+                <p class="content">Think about all screen sizes! Ask friends if your design works well on their screen or use websites that simulate different resolutions..</p>
+                
+                
+
+            </article>
+
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="author">
+            <div class="avatars">
+                <img src="/asset/gp_av.png" alt="geniuspanda" class="gp">
+                <img src="/asset/lab_av.png" alt="code_lab" class="lab">
+            </div>
+
+            <p>
+                The Blank Theme is created and maintained by <a href="https://code-lab.tumblr.com/" class="underline" target="_blank">Geniuspanda</a> (Kim, <em>her</em>). It was made with the goal of serving the forum-based RPG community by empowering others to create more freely.
+                <br /><br />
+                Some of the features added to this theme were built by <a href="/EN/modifications.html" class="underline" target="_blank">other creators</a>. I thank them for sharing their ideas and knowledge with us!
+            </p>
+        </div>
+
+        <div class="links_footer">
+            <a href="https://blankthemerpg.forumactif.com/" target="_blank">Forum</a><br />
+            <a href="https://blankthemerpg.forumactif.com//f14-updates" target="_blank">Updates</a><br />
+            <a href="https://blankthemerpg.forumactif.com//f3-support-help" target="_blank">Technical support</a><br />
+            <a href="https://blankthemerpg.forumactif.com//t46-share-your-forum" target="_blank">Share with us</a><br /><br />
+
+            <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#4B57C5', 'H2H72OYRJ');kofiwidget2.draw();</script> 
+        </div>
+
+    </footer>
+</body>
+</html>

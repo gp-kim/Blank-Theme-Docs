@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blank Theme Documentation</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="pages.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@300;0,400;0,700;0,900;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="/" class="homepage">
+                <img src="asset/logo.png" />
+                <span class="title">Blank Theme</span>
+            </a>
+            <div class="lang">
+                <a href="/EN/index.html">
+                    <img src="asset/en_flag.png" alt="english" class="flag">en
+                </a>
+                <a class="translate" href="https://blankthemerpg.forumactif.com/t47-multi-langages-help-translate" target="_blank">translate?</a>
+
+            </div>
+
+        </div>
+
+        <div class="navigation" id="header">
+            <a href="configuration.html">Configuration</a>
+            <a href="modifications.html">Modifications</a>
+            <a href="tips.html">Conseils</a>
+            <a href="templates.html">Structure</a>
+            <a href="https://github.com/gp-kim/Blank-Theme" target="_blank" class="code-nav">Codes</a>
+        </div>
+    </header>
+
+
+
+    <div class="head-page">
+        <i class="bi bi-paint-bucket"></i>
+        <div>
+            <h1>Modifications</h1>
+            <p>La liste des fonctionnalités ajoutées ou supprimées par le Blank Thème</p>
+        </div>
+    </div>
+
+    <main>
+
+        <aside>
+            <div class="index">
+                <a href="#addon"><i class="bi bi-caret-right-fill"></i>Ajouts</a><br>
+                <a href="#removed"><i class="bi bi-caret-right-fill"></i>Suppressions</a><br>
+                <a href="#generals"><i class="bi bi-caret-right-fill"></i>Généralités</a><br>
+                <a href="#topheader"><i class="bi bi-caret-right-fill"></i>Haut de page</a><br>
+                <a href="#toolbar"><i class="bi bi-caret-right-fill"></i>Toolbar</a><br>
+                <a href="#homepage"><i class="bi bi-caret-right-fill"></i>Page d'accueil</a><br>
+                <a href="#users"><i class="bi bi-caret-right-fill"></i>Membres</a><br>
+                <a href="#forums"><i class="bi bi-caret-right-fill"></i>Liste des sujets</a><br>
+                <a href="#messages"><i class="bi bi-caret-right-fill"></i>Messages</a><br>
+                <a href="#blogs"><i class="bi bi-caret-right-fill"></i>Blogs</a><br>
+                <a href="#footer"><i class="bi bi-caret-right-fill"></i>Bas de page</a>
+            </div>
+
+        </aside>
+
+
+        <div class="content">
+
+            <h2 id="addon">Ajouts et optimisations</h2>
+
+            <article class="onpage">
+                <ul>
+                    <li><a href="https://blankthemerpg.forumactif.com/f8-switcheroo" target="_blank" class="underline">Switcheroo</a> gestionnaire de multicompte <span>par Monomer</span></li>
+                    <li><a href="https://forum.forumactif.com/t355862-afficher-l-avatar-du-membre-dans-la-toolbar" target="_blank" class="underline">Avatar dans la toolbar</a> <span>par Tech</span></li>
+                    <li><a href="https://forum.forumactif.com/t379011-avatar-du-dernier-membre-inscrit-dans-le-qui-est-en-ligne#3196239" target="_blank" class="underline">Avatar du dernier inscrit</a> <span>par No_Way</span></li>
+                    <li><a href="https://forum.forumactif.com/t309759-bouton-selectionner-le-contenu-pour-les-balises-de-code" target="_blank" class="underline">Sélectionner le contenu d'unc ode</a> <span>par Ea</span></li>
+                    <li><a href="https://forum.forumactif.com/t378492-rendre-le-systeme-de-mentions-plus-facile-a-utiliser" target="_blank" class="underline">Mention facile dans les messages</a> <span>par Shadow</span></li>
+                    <li><a href="https://forum.forumactif.com/t400216-afficher-les-icones-de-sujets-dans-la-colonne-derniers-messages#3340636" target="_blank" class="underline">Icônes des messages</a> <span>par Milouze14</span></li>
+                    <li><a href="https://flerex.dev/entradas/clases-unicas-a-los-campos-del-miniperfil" target="_blank" class="underline">Champs de profils uniques et amovibles</a> <span>par Flerex et option par Monomer</span></li>
+                    <li>Ascenseur</li>
+                    <li>Personnalisation simplifiée de la toolbar</li>
+                    <li>Personnalisation simplifiée des blogs</li>
+                    <li>Personnalisation simplifiée du bouton « J'aime »</li>
+                    <li>Personnalisation simplifiée des sondages</li>
+                    <li>Personnalisation simplifiée de la prévisualisation des profils au survol d'un tag</li>
+                    <li>Personnalisation de la chaîne de navigation (forum › sous-forum › sujet)</li>
+                    <li>Modification des textes dans le « Qui est en ligne » et autres liens <span>(french only)</span></li>
+                    <li>Divers boutons en image remplacés par du texte <span>(nouveau, répondre, ...)</span></li>
+                </ul>
+
+
+            </article>
+
+            <h2 id="removed">Suppressions</h2>
+
+            <article class="onpage" id="generals">
+                <span class="title_article">Généralités</span>
+                <ul>
+                    <li>Affichage de la date et l'heure actuelle</li>
+                    <li>Affichage de la dernière visite de l'utilisateur</li>
+                    <li>Légendes des images des catégories et sujets</li>
+                    <li>Système de remerciement et de réputation</li>
+                    <li>Fichiers joints</li>
+                    <li>Affichage des Widgets</li>
+                    <li>Système d'ami et de commentaire dans les profils</li>
+                    <li>Gestion du calendrier</li>
+                    <li>Citation multiple</li>
+                </ul>
+            </article>
+
+            <article class="onpage" id="topheader">
+                <span class="title_article">Haut de page <span>(overall_header)</span></span>
+                <ul>
+                    <li>Popup de connexion</li>
+                    <li>Prévisualisation d'un thème Hitskin</li>
+                    <li>Nom du forum</li>
+                    <li>Description du forum</li>
+                    <li>Lien de la barre de navigation : calendrier, FAQ, groupes (modifiable dans le CSS)</li>
+                    <li>Barre de recherche</li>
+                </ul>
+            </article>
+
+
+            <article class="onpage" id="toolbar">
+                <span class="title_article">Toolbar <span>(CSS)</span></span>
+                <ul>
+                    <li>Logo Forumactif</li>
+                    <li>Liens de partage vers les réseaux sociaux</li>
+                    <li>Barre de recherche</li>
+                </ul>
+            </article>
+
+
+
+            <article class="onpage" id="homepage">
+                <span class="title_article">Page d'accueil et Qui est en ligne <span>(index_body)</span></span>
+                <ul>
+                    <li>Connexion rapide par Facebook et TopicIt</li>
+                    <li>Titre/lien « Qui est en ligne ? »</li>
+                    <li>Record du nombre d'utilisateurs connectés</li>
+                    <li>Anniversaires des membres</li>
+                    <li>Légendes des groupes + liens des groupes</li>
+                </ul>
+
+
+                <span class="title_article">Catégories <span>(index_box)</span></span>
+                <ul>
+                    <li>Entête de colonne indiquant « sujets », « messages », « derniers messages »</li>
+                    <li>Liens des modérateurs</li>
+                    <li>Liens des multiples sous-forums (si premier choix dans « Structure et hiérarchie » choisi)</li>
+                    <li>Affichage des catégories « petites annonces »</li>
+                </ul>
+            </article>
+
+
+
+            <article class="onpage" id="users">
+                <span class="title_article">Liste des membres <span>(memberlist_body)</span></span>
+                <ul>
+                    <li>Mention « Rechercher un utilisateur ou modifier l'ordre d'affichage »</li>
+                    <li>Notion « Pas d'utilisateur »</li>
+                </ul>
+
+                <span class="title_article">Profil seul <span>(profile_view_body)</span></span>
+                <ul>
+                    <li>Imagine de la feuille RPG</li>
+                    <li>Pourcentage de participation des messages dans profil ([xx % du total / xx messages par jour])</li>
+                </ul>
+            </article>
+
+
+
+            <article class="onpage" id="forums">
+                <span class="title_article">Affichage d'un forum, entête et bas de la liste des sujets <span>(viewforum_body)</span></span>
+                <ul>
+                    <li>Bouton « Plus! » : seuls les liens « Copier le lien BBcode de cette page » et « Imprimer cette page »</li>
+                    <li>Champ « Rechercher »</li>
+                    <li>Modérateurs de cette catégorie</li>
+                    <li>Permissions</li>
+                </ul>
+
+                <span class="title_article">Affichage liste des sujets <span>(topics_list_box)</span></span>
+                <ul>
+                    <li>Entête de colonne indiquant « sujets », « réponses », « vues », « derniers messages »</li>
+                </ul>
+            </article>
+
+
+
+            <article class="onpage" id="messages">
+                <span class="title_article">Affichage d'un message <span>(viewtopic_body)</span></span>
+                <ul>
+                    <li>Changer la position des profils (droite ou gauche) dans le panneau d'administration</li>
+                    <li>Boutons « Partagez » vers les réseaux sociaux</li>
+                    <li>Bouton « Plus! » : seuls les liens « Copier le lien BBcode de cette page » et « Imprimer cette page »</li>
+                    <li>Image-lien pour « aller en bas/haut », « aller au sujet suivant/précédent »</li>
+                    <li>Bouton « Signaler ce message »</li>
+                    <li>Notion « Ce message a été édité X fois »</li>
+                    <li>Bouton « Je n'aime pas » et la liste de ceux qui ont cliqué sur « J'aime »</li>
+                    <li>Apparence du message de publicité qui apparaît pour les invités en fin de sujet (ne retire pas pour autant la publicité)</li>
+                    <li>Notion « Message rapide »</li>
+                    <li>Permissions</li>
+                </ul>
+            </article>
+
+
+
+            <article class="onpage" id="blogs">
+                <span class="title_article">Affichage d'un blog, si activé <span>(viewcomments_body)</span></span>
+                <ul>
+                    <li>Profil et signature po steur</li>
+                    <li>Date du blog</li>
+                </ul>
+            </article>
+
+
+
+
+            <article class="onpage" id="footer">
+                <span class="title_article">Bas de page, début <span>(overall_footer_begin)</span></span>
+                <ul>
+                    <li>Lien « Page d'accueil » (remplacé par "retour en haut")</li>
+                </ul>
+
+                <span class="title_article">Bas de page, fin <span>(overall_footer_end)</span></span>
+                <ul>
+                    <li>Lien « Panneau d'administration » (déplacé vers le template : bas de page - début)</li>
+                    <li>Option pour ajouter des liens depuis le panneau d'administration (Modules > Liens de bas de page)</li>
+                </ul>
+            </article>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="author">
+            <div class="avatars">
+                <img src="https://www.zupimages.net/up/21/41/6l9s.png" alt="Geniuspanda" class="gp">
+                <img src="https://www.zupimages.net/up/21/41/nvf9.png" alt="code_lab" class="lab">
+            </div>
+
+            <p>
+                Le Blank Thème a été réalisé par <a href="https://code-lab.tumblr.com/" class="underline" target="_blank">Geniuspanda</a> (Kim, <em>elle</em>). Il a été conçu avec un vrai désir de servir la communauté, de créer plus facilement et plus librement.
+                <br /><br />
+                Des fonctionnalités ajoutés sont issus <a href="modifications.html" class="underline" target="_blank">d’autre créateurs</a> que je remercie pour mettre leurs connaissances à dispotion !
+            </p>
+        </div>
+
+        <div class="links_footer">
+            <a href="https://blankthemerpg.forumactif.com/" target="_blank">Forum</a><br />
+            <a href="https://blankthemerpg.forumactif.com/f14-updates" target="_blank">Actualités</a><br />
+            <a href="https://blankthemerpg.forumactif.com/f3-support-help" target="_blank">Support technique</a><br />
+            <a href="https://blankthemerpg.forumactif.com/t46-share-your-forum" target="_blank">Partages</a><br /><br />
+
+            <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#4B57C5', 'H2H72OYRJ');kofiwidget2.draw();</script> 
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

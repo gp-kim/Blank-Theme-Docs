@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blank Theme - Structures et templates</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="pages.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@300;0,400;0,700;0,900;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="/" class="homepage">
+                <img src="asset/logo.png" />
+                <span class="title">Blank Theme</span>
+            </a>
+            <div class="lang">
+                <a href="/EN/index.html">
+                    <img src="asset/en_flag.png" alt="english" class="flag">en
+                </a>
+                <a class="translate" href="https://blankthemerpg.forumactif.com/t47-multi-langages-help-translate" target="_blank">translate?</a>
+
+            </div>
+
+        </div>
+
+        <div class="navigation" id="header">
+            <a href="configuration.html">Configuration</a>
+            <a href="modifications.html">Modifications</a>
+            <a href="tips.html">Conseils</a>
+            <a href="templates.html">Structure</a>
+            <a href="https://github.com/gp-kim/Blank-Theme" target="_blank" class="code-nav">Codes</a>
+        </div>
+    </header>
+
+
+
+    <div class="head-page">
+        <i class="bi bi-columns-gap"></i>
+        <div>
+            <h1>Templates et structures</h1>
+            <p>Mieux comprendre la hiérarchie de son forum et la façon dont il est construit</p>
+        </div>
+    </div>
+
+    <main>
+
+        <aside>
+            <div class="index">
+  <button class="tablinks" onclick="openCity(event, 'homepage')" id="defaultOpen"><i class="bi bi-caret-right-fill"></i>Page d'accueil </button>
+  <button class="tablinks" onclick="openCity(event, 'forum')"><i class="bi bi-caret-right-fill"></i>Affichage d'un forum</button><br>
+  <button class="tablinks" onclick="openCity(event, 'topics')"><i class="bi bi-caret-right-fill"></i>Affichage d'un sujet</button><br>
+               <button class="tablinks" onclick="openCity(event, 'advices')"><i class="bi bi-caret-right-fill"></i>Astuces</button>
+            </div>
+
+        </aside>
+
+
+        <div class="content">
+
+            <div id="homepage" class="tabcontent template">
+
+                <img src="/asset/templates_hompage.png" />
+            </div>
+
+            <div id="forum" class="tabcontent template">
+
+                <img src="/asset/templates_forums.png" alt="">
+            </div>
+
+            <div id="topics" class="tabcontent template">
+
+                <img src="/asset/templates_topics.png" alt="">
+            </div>
+
+
+            <div id="advices" class="tabcontent">
+
+                <h2 id="forums">Afficher un élément sur toutes les pages</h2>
+
+                <article class="onpage">
+                    <p class="content">Pour afficher un élément sur toutes les pages, comme un ascenseur, une sidebar ou autre, implémentez-le dans les templates <c>overall_header</c> ou <c>overall_footer</c> car seuls ces templates apparaissent sur toutes les pages. Pour que l'élément soit fixé quelque part dans un coin de la page, assurez-vous de le coder en dehors de la structure du forum <c>&lt;div class="main_forum"&gt;</c> et de lui attribuer la propriété <c>position: fixed</c>
+                    </p>
+                </article>
+
+                <h2 id="forums">Modifier la toolbar</h2>
+
+                <article class="onpage">
+                    <p class="content">La toolbar est l'un des rares éléments à ne pas se trouver dans les templates. Sa modification n'est possible qu'en CSS.</p>
+                </article>
+
+
+                <h2 id="forums">Afficher un bandeau sous la bannière</h2>
+
+                <article class="onpage">
+                    <p class="content">Pour cela rien de plus simple : localisez la variable de la bannière dans le template <c>overall_header</c> et codez votre élément juste en dessous.</p>
+                </article>
+
+
+                <h2 id="forums">Déplacer des variables</h2>
+
+                <article class="onpage">
+                    <p class="content">Certaines variables peuvent être déplacées d'un template à l'autre, notamment lorsque les templates sont imbriqués (comme <c>viewforum_body</c> et <c>topics_list_box</c>, par exemple). Forumactif ayant une logique aléatoire, il faut simplement expérimenter avec les différentes possibilités.</p>
+                </article>
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="author">
+            <div class="avatars">
+                <img src="https://www.zupimages.net/up/21/41/6l9s.png" alt="Geniuspanda" class="gp">
+                <img src="https://www.zupimages.net/up/21/41/nvf9.png" alt="code_lab" class="lab">
+            </div>
+
+            <p>
+                Le Blank Thème a été réalisé par <a href="https://code-lab.tumblr.com/" class="underline" target="_blank">Geniuspanda</a> (Kim, <em>elle</em>). Il a été conçu avec un vrai désir de servir la communauté, de créer plus facilement et plus librement.
+                <br /><br />
+                Des fonctionnalités ajoutés sont issus <a href="modifications.html" class="underline" target="_blank">d’autre créateurs</a> que je remercie pour mettre leurs connaissances à dispotion !
+            </p>
+        </div>
+
+        <div class="links_footer">
+            <a href="https://blankthemerpg.forumactif.com/" target="_blank">Forum</a><br />
+            <a href="https://blankthemerpg.forumactif.com/f14-updates" target="_blank">Actualités</a><br />
+            <a href="https://blankthemerpg.forumactif.com/f3-support-help" target="_blank">Support technique</a><br />
+            <a href="https://blankthemerpg.forumactif.com/t46-share-your-forum" target="_blank">Partages</a><br /><br />
+
+            <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#4B57C5', 'H2H72OYRJ');kofiwidget2.draw();</script> 
+
+        </div>
+
+    </footer>
+    
+    
+        <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+        
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+
+</html>
